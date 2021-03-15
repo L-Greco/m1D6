@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Grecco</title>
+    
+    
     <style>
+        .new-class {
+            color:white;
+            background-color: rgb(226, 50, 94);
+        }
     img {
         height:200px;
         width: 200px;
     }
     .price {
-        color:red;
+        color:rgb(238, 14, 14);
         font-size: 25px;
+       
     }
+    .invisible {
+            height:0px;
+            width: 0px;
+        }
     
      </style>
 </head>
 <body>
+    <script src="index.js"></script>
     <h1>Welcome to Mac Greco's Shop!!! </h1>
     <table>
         <tr>
@@ -53,7 +65,7 @@
                 <br>Fast-charge and wireless charging capable</td>
         </tr>
         <tr>
-<td class="price">Only for $282! </td>
+<td class="price" >Only for $282! </td>
 <td class="price">Only for $699!</td>
 <td class="price">Only for $229! </td>
 <td class="price">Only for $319!</td>
@@ -77,25 +89,16 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<script> 
-const h1change = function () {
-let h1 = document.querySelector("h1")
-h1.innerText = " The title has changed!"
-}
-const h1return = function () {
-    let h11 = document.querySelector("h1")
-    h11.innerText = " Welcome to Mac Greco's Shop!!!!"
-}
-
-
-</script>
+<br><button onclick="priceColor()">Click to make the color change!!</button>
+<br><button onclick="invi()">Click to make the images dissapear!!</button>
+<button onclick="cssClass()">Click to change the link's color!!</button>
+<button onclick="changeColor()">Click to change the page color!!</button>
 <button onclick="h1change()">Click to change the title!!</button>
 <button onclick ="h1return()">Click  to return the title !</button>
+<button onclick ="changeAddress()">Click  to change the address !</button>
 <footer><em>Mac Greco</em> <br>
-<em>Address : Naousas 2 , Heraklion, Crete</em>
+<p> <em> Address : Naousas 2 , Heraklion, Crete </em> </p><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52085.675924931435!2d25.10005126721014!3d35.322011351429076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149a586bd068e13f%3A0x400bd2ce2b9b6f0!2zzpfPgc6szrrOu861zrnOvw!5e0!3m2!1sel!2sgr!4v1615840572623!5m2!1sel!2sgr" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </footer>
 
 </body>
